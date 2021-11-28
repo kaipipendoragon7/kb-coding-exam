@@ -1,0 +1,14 @@
+<h1>Geek</h1>
+<h3>新規情報</h3>
+<%= form_for @student do |f| %>
+  <div class="field">
+    <%= f.text_field :name %>
+    <%= f.text_field :profile, :size => 140 %>
+     <%= f.text_field :mentor %>
+      <%= f.text_field :grade %>
+  </div>
+  
+
+  <%= f.submit "追加する" %>
+<% end %>
+<%= link_to "生徒情報一覧に戻る", students_path %>
